@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leaf Stone (리프스톤) - 스마트팜 원격재배 & 혁신 비즈니스 솔루션</title>
+  <title>Leaf Stone (리프스톤) - 스마트팜 원격재배 & 혁신 솔루션</title>
   <style>
     /* 기본 스타일 */
     body {
@@ -56,7 +56,7 @@
     }
     header::before {
       content: "";
-      background: url('https://source.unsplash.com/1600x900/?farm,field') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       z-index: 0;
@@ -69,52 +69,53 @@
       margin: 0;
       padding-top: 120px;
     }
-    /* 회사소개 섹션 */
+    /* 섹션 내 갤러리 */
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: calc(33.333% - 0.66rem);
+      border-radius: 5px;
+      object-fit: cover;
+    }
+    /* 각 섹션별 배경 */
     #about {
-      background: url('https://source.unsplash.com/1600x900/?office,teamwork') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
     }
-    #about .gallery {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    #about .gallery img {
-      width: calc(33.333% - 0.66rem);
-      border-radius: 5px;
-      object-fit: cover;
-    }
-    /* 서비스 소개 섹션 */
     #service {
-      background: url('https://source.unsplash.com/1600x900/?smartfarm,technology') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1559260398-190a7fef1556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
     }
-    #service .gallery {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    #service .gallery img {
-      width: calc(50% - 0.5rem);
-      border-radius: 5px;
-      object-fit: cover;
-    }
-    /* 비즈니스 솔루션 섹션 */
     #solution {
-      background: url('https://source.unsplash.com/1600x900/?innovation,health') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1508186225823-09614b88e2b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
     }
-    #solution .gallery {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+    #vision {
+      background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    }
+    /* 각 섹션별 갤러리 이미지 사이즈 */
+    #about .gallery img { width: calc(33.333% - 0.66rem); }
+    #service .gallery img { width: calc(50% - 0.5rem); }
+    #solution .gallery img { width: calc(33.333% - 0.66rem); }
+    #vision .gallery img { width: calc(33.333% - 0.66rem); }
+    /* 서비스 영상 컨테이너 */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
       margin-top: 1rem;
     }
-    #solution .gallery img {
-      width: calc(33.333% - 0.66rem);
-      border-radius: 5px;
-      object-fit: cover;
+    .video-container iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
-    /* Footer 영역 */
+    /* 푸터 영역 */
     footer {
       background-color: #f2f2f2;
       color: #555;
@@ -126,9 +127,7 @@
       margin: 0.3rem 0;
     }
     /* 오버레이 해제 (갤러리 영역) */
-    .no-overlay::before {
-      background: none;
-    }
+    .no-overlay::before { background: none; }
   </style>
 </head>
 <body>
@@ -137,52 +136,73 @@
     <h1>Leaf Stone (리프스톤)</h1>
   </header>
 
-  <!-- 회사소개 섹션 -->
+  <!-- 섹션 1: 회사소개 -->
   <section id="about">
     <div class="container">
       <h2>우리의 비전 & 기업 소개</h2>
       <p>
         Leaf Stone(리프스톤)은 혁신적인 스마트팜 솔루션과 원격재배 시스템을 통해 고객이 직접 참여하며 건강과 웰빙을 실현할 수 있도록 지원합니다.
-        최첨단 IoT 기술과 스마트팜 운영 노하우로 미래 농업의 패러다임을 선도하며, 지속 가능한 성장을 추구합니다.
+        최첨단 IoT 기술과 지속 가능한 운영 노하우로 미래 농업의 패러다임을 선도합니다.
       </p>
-      <!-- 회사소개 이미지 갤러리 -->
+      <!-- 회사소개 갤러리 -->
       <div class="gallery no-overlay">
-        <img src="https://source.unsplash.com/600x400/?corporate,office" alt="모던한 기업 사무실">
-        <img src="https://source.unsplash.com/600x400/?team,meeting" alt="열정적인 팀워크">
-        <img src="https://source.unsplash.com/600x400/?innovation,technology" alt="혁신 기술 이미지">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="모던한 사무실">
+        <img src="https://images.unsplash.com/photo-1532614338840-77b3e642e8d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="열정적인 팀워크">
+        <img src="https://images.unsplash.com/photo-1597621273051-770af5ee2420?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="혁신 기술 이미지">
       </div>
     </div>
   </section>
 
-  <!-- 스마트팜 원격재배 서비스 섹션 -->
+  <!-- 섹션 2: 스마트팜 원격재배 서비스 -->
   <section id="service">
     <div class="container">
       <h2>스마트팜 원격재배 서비스</h2>
       <p>
-        Leaf Stone의 원격재배 서비스는 고객 개개인에게 전용 재배 공간을 제공하며, 실시간 모니터링과 데이터 분석을 통해 최상의 건강 및 헬스케어 솔루션을 지원합니다.
-        사용자는 언제 어디서나 스마트한 재배 환경을 경험할 수 있습니다.
+        고객 전용 재배 공간과 실시간 모니터링 시스템을 통해, 언제 어디서나 쉽게 스마트팜을 경험할 수 있습니다.
+        데이터 기반 맞춤 헬스케어와 편리한 재배 환경이 Leaf Stone의 차별화된 서비스입니다.
       </p>
-      <!-- 서비스 이미지 갤러리 -->
+      <!-- 서비스 영상 -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/bTnjplb0xCo?si=Gn5WSW-UyvrSIpYv" allowfullscreen title="서비스 소개 영상"></iframe>
+      </div>
+      <!-- 서비스 갤러리 -->
       <div class="gallery no-overlay">
-        <img src="https://source.unsplash.com/600x400/?remote,farming" alt="원격 재배 시스템 모니터링">
-        <img src="https://source.unsplash.com/600x400/?greenhouse,technology" alt="첨단 스마트팜 설비">
+        <img src="https://images.unsplash.com/photo-1581091870626-8d3d62b29b1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="원격 재배 시스템 모니터링">
+        <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="첨단 스마트팜 설비">
       </div>
     </div>
   </section>
 
-  <!-- 비즈니스 솔루션 섹션 -->
+  <!-- 섹션 3: 혁신 솔루션 & 서비스 혜택 -->
   <section id="solution">
     <div class="container">
-      <h2>비즈니스 솔루션 & 서비스 혜택</h2>
+      <h2>혁신 솔루션 & 서비스 혜택</h2>
       <p>
-        고객은 원격재배를 통해 직접 재배에 참여하며, 건강 데이터와 실시간 정보를 기반으로 맞춤형 헬스케어 서비스를 누릴 수 있습니다.
-        또한, 커뮤니티와의 소통 및 정보 공유를 통해 농업 노하우와 라이프스타일 혁신을 경험하게 됩니다.
+        Leaf Stone은 고객의 건강 데이터와 재배 정보를 바탕으로 맞춤형 헬스케어 및 생활 혁신 솔루션을 제공합니다.
+        체계적인 데이터 분석과 고객 소통을 통해 삶의 질을 한 단계 업그레이드하세요.
       </p>
-      <!-- 비즈니스 솔루션 이미지 갤러리 -->
+      <!-- 솔루션 갤러리 -->
       <div class="gallery no-overlay">
-        <img src="https://source.unsplash.com/600x400/?health,wellness" alt="개인 맞춤 헬스케어">
-        <img src="https://source.unsplash.com/600x400/?data,analytics" alt="데이터 분석 화면">
-        <img src="https://source.unsplash.com/600x400/?community,network" alt="활발한 고객 소통">
+        <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="맞춤 헬스케어">
+        <img src="https://images.unsplash.com/photo-1581092580492-dca73182e2b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="데이터 분석 화면">
+        <img src="https://images.unsplash.com/photo-1581091012184-2a1c6a2b21ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="고객 소통">
+      </div>
+    </div>
+  </section>
+
+  <!-- 섹션 4: 고객 혜택 & 미래 비전 -->
+  <section id="vision">
+    <div class="container">
+      <h2>고객 혜택 & 미래 비전</h2>
+      <p>
+        Leaf Stone과 함께라면 스마트팜 원격재배를 통한 직접 체험과 혁신 헬스케어 솔루션을 경험할 수 있습니다.
+        고객의 행복과 건강, 미래 지향적 라이프스타일을 실현하는 파트너가 되겠습니다.
+      </p>
+      <!-- 미래 비전 갤러리 -->
+      <div class="gallery no-overlay">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="행복한 고객">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="디지털 데이터">
+        <img src="https://images.unsplash.com/photo-1504386106331-3e4e71712b38?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="미래 지향적 이미지">
       </div>
     </div>
   </section>
@@ -192,7 +212,7 @@
     <div class="container">
       <p>&copy; 2025 Leaf Stone (리프스톤). All rights reserved.</p>
       <p>
-        사업자등록번호: 651-72-00601 | 통신판매업: 2025-경기광명-0262 | 대표자: 홍길동
+        사업자등록번호: 651-72-00601 | 통신판매업: 2025-경기광명-0262 | 대표자: 이영일
       </p>
       <p>
         주소: 경기도 광명시 오리로 920번길 23, 2층
