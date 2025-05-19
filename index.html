@@ -28,17 +28,35 @@
       font-size: 1.1rem;
       margin-bottom: 1rem;
     }
+
+    /* 헤더 스타일 개선 */
     header {
       background-color: #FFFFFF;
-      text-align: center;
-      color: #333;
-      padding: 4rem 0;
+      padding: 2rem 0;
       border-bottom: 2px solid #e0e0e0;
     }
-    header h1 {
-      font-size: 3rem;
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .header-content img {
+      height: 60px;
+      max-width: 100%;
+    }
+    .header-content h1 {
+      font-size: 2.5rem;
       margin: 0;
     }
+    .header-sub {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
     section {
       padding: 4rem 0;
       text-align: center;
@@ -100,8 +118,15 @@
 
   <!-- 헤더 -->
   <header>
-    <h1>Leaf Stone (리프스톤)</h1>
-    <p>모바일로 관리하는 구독형 스마트팜 원격재배 솔루션</p>
+    <div class="container">
+      <div class="header-content">
+        <img src="images/logo.png" alt="Leaf Stone 로고" />
+        <h1>Leaf Stone (리프스톤)</h1>
+      </div>
+      <div class="header-sub">
+        모바일 기반 원격재배 스마트팜 & 구독형 웰빙 플랫폼
+      </div>
+    </div>
   </header>
 
   <!-- 기업 소개 -->
