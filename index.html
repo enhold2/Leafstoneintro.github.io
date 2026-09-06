@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="73WxtT_kL0pQkgIfdqaGGOsh5VYzeD8Vl2LQQXVovlI" />
   <title>Leaf Stone (리프스톤) - 스마트팜 원격재배 & 혁신 솔루션</title>
+  <meta name="description" content="Leaf Stone(리프스톤)은 모바일 원격재배 스마트팜과 AI 소프트웨어를 만드는 회사입니다. 스마트팜 구독 서비스, AI 메신저 LoCI Chat, SNS 관리 커넥터 LociFlow를 운영합니다." />
+  <link rel="icon" href="images/logo.png" />
+
+  <!-- Open Graph — LinkedIn·카카오 등에서 링크 공유 시 미리보기 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Leaf Stone (리프스톤)" />
+  <meta property="og:title" content="Leaf Stone (리프스톤) - 스마트팜 원격재배 & 혁신 솔루션" />
+  <meta property="og:description" content="모바일 원격재배 스마트팜과 AI 소프트웨어를 만드는 회사. 스마트팜 구독, LoCI Chat, LociFlow." />
+  <meta property="og:url" content="https://leafstone.kr/" />
+  <meta property="og:image" content="https://leafstone.kr/images/logo.png" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -61,8 +71,41 @@
       padding: 4rem 0;
       text-align: center;
     }
-    #about, #solution {
+    #about, #solution, #software {
       background-color: #FFFFFF;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .card {
+      flex: 1 1 320px;
+      max-width: 460px;
+      background-color: #F8F8F8;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .card h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.4rem;
+    }
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .card a {
+      color: #2E7D32;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
     }
     #service, #vision {
       background-color: #F8F8F8;
@@ -159,7 +202,7 @@
         <img src="images/chat.png" alt="실시간 채팅 관리" />
       </div>
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Y_T8QBLMuTQ?si=dATB8-X3ylJrhdLa" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Y_T8QBLMuTQ?si=dATB8-X3ylJrhdLa" title="Leaf Stone 스마트팜 원격재배 소개 영상" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -191,19 +234,60 @@
     </div>
   </section>
 
+  <!-- SOFTWARE -->
+  <section id="software">
+    <div class="container">
+      <h2>소프트웨어 서비스</h2>
+      <p>
+        Leaf Stone은 스마트팜과 함께 AI 기반 소프트웨어를 직접 개발해 운영합니다.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>LociFlow</h3>
+          <p>
+            Claude·ChatGPT 같은 AI 대화창에서 그대로 SNS를 관리하는 서비스입니다.
+            커넥터를 한 번 연결하면 연결한 계정을 조회하고, 브랜드 규칙에 맞춘 초안을 만들고,
+            사용자가 승인하면 게시하거나 원하는 시각으로 예약합니다.
+          </p>
+          <p>
+            게시는 반드시 두 단계입니다. AI가 만든 초안을 그대로 보여드리고,
+            사용자가 승인한 뒤에야 실제로 게시됩니다.
+            Instagram · Threads · Facebook · LinkedIn · TikTok · YouTube를 지원합니다.
+          </p>
+          <p>
+            <a href="https://lociflow.locichat.kr" target="_blank" rel="noopener noreferrer">lociflow.locichat.kr &rarr;</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>LoCI Chat</h3>
+          <p>
+            AI를 곁들인 메신저입니다. 1:1·그룹 채팅과 이미지·파일 공유에,
+            나만의 AI 아바타와의 대화, 대화 속에서 약속을 찾아 시간·장소를 추천하는 기능,
+            감정 태그를 다는 일기, 아이디어를 잇는 Mycelium 지식 그래프를 더했습니다.
+          </p>
+          <p>
+            <a href="https://locichat.kr" target="_blank" rel="noopener noreferrer">locichat.kr &rarr;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Leaf Stone (리프스톤). All rights reserved.</p>
+      <p>&copy; 2025-2026 Leaf Stone (리프스톤). All rights reserved.</p>
       <p>사업자등록번호: 651-72-00601 | 통신판매업: 2025-경기광명-0262 | 대표자: 이영일</p>
       <p>주소: 경기도 광명시 오리로 920번길 23, 2층</p>
-      <p>전화: 010-5515-0215 | 이메일: leafstone@leeafstone.kr</p>
+      <p>전화: 010-5515-0215 | 이메일: leafstone@leafstone.kr</p>
 
       <!-- 🔥 추가된 고객지원 링크 -->
       <p>
-        <a href="privacy.html" target="_blank">개인정보 처리방침</a> |
-        <a href="termservice.html" target="_blank">이용약관</a> |
-        <a href="contact.html" target="_blank">문의하기(고객지원)</a>
+        <a href="privacy.html" target="_blank" rel="noopener noreferrer">개인정보 처리방침</a> |
+        <a href="termservice.html" target="_blank" rel="noopener noreferrer">이용약관</a> |
+        <a href="contact.html" target="_blank" rel="noopener noreferrer">문의하기(고객지원)</a>
       </p>
     </div>
   </footer>
